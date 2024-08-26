@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.mobile {
+    display:none;
+}
+
+.hidden {
+    display:none;
+}
+
+main {
+    margin-left:10rem;
+    overflow:hidden;
+    z-index:-3;
+}
+
+body {
+    font-family:"Barlow Condensed", sans-serif;
+}
+
+nav {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    overflow:hidden;
+    margin-top:5rem;
+}
+
+
+nav ul {
+    list-style:none;
+    display:flex;
+    position:relative;
+}
+
+nav ul li {
+    margin-inline:2rem;
+}
+
+nav ul li a {
+    text-decoration:none;
+    text-transform:uppercase;
+    color:hsl(230, 29%, 20%);
+    font-weight:700;
+    font-size:1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration:underline;
+}
+
+nav ul .login {
+    color:hsl(231, 7%, 65%);
+}
+
+section {
+    margin-top:10rem;
+}
+
+.flexbox {
+    display:flex;
+}
+
+.heading {
+    align-items:center;
+    text-transform:uppercase;
+}
+
+.heading h1 {
+    font-size:1.3rem;
+    letter-spacing:0.2rem;
+    color:hsl(231, 7%, 65%);
+    font-weight:400;
+}
+
+.heading p {
+    font-size:1.1rem;
+    background-color:hsl(230, 29%, 20%);
+    color:white;
+    border-radius:1rem;
+    padding-inline:0.8rem;
+    padding-block:0.2rem;
+    margin-right:1rem;
+    font-weight:700;
+}
+
+h2 {
+    margin-top:2rem;
+    font-size:4rem;
+    text-transform:uppercase;
+    color:hsl(230, 29%, 20%);
+    margin-bottom:2rem;
+}
+
+#main-text {
+    font-size:1.2rem;
+    color:hsl(230, 11%, 40%);
+    margin-bottom:4rem;
+}
+
+.live-preview {
+    align-items:center;
+}
+
+.live-preview button {
+    background-color:hsl(0, 100%, 68%);
+    padding-inline:2rem;
+    padding-block:0.8rem;
+    margin-right:1rem;
+    border:none;
+    border-radius:0.5rem;
+    text-transform:uppercase;
+    font-family:"Barlow Condensed", sans-serif;
+    font-size:1.1rem;
+    font-weight:700;
+    color:white;
+    letter-spacing:0.1rem;
+}
+
+.live-preview button:hover {
+    cursor:pointer;
+    background-color:hsl(0, 100%, 78%);
+}
+
+.live-preview p {
+    font-size:1.3rem;
+    letter-spacing:0.2rem;
+    color:hsl(231, 7%, 65%);
+    font-weight:400;
+    text-transform:uppercase;
+}
+
+.devices {
+    position:relative;
+    left:5rem;
+    z-index:-3;
+}
+
+.bg {
+    content:'';
+    position:absolute;
+    height:32rem;
+    width:56rem;
+    background:hsl(207, 33%, 95%);
+    top:-2rem;
+    right:0;
+    z-index:-4;
+    border-bottom-left-radius: 5rem;
+}
+
+@media(max-width:800px) {
+    .mobile {
+        display:block;
+    }
+
+    .desktop {
+        display:none;
+    }
+
+    nav {
+        padding-inline:3rem;
+    }
+
+    .mobile_links ul {
+        background-color:white;
+        width:100%;
+        max-width:20rem;
+        display:block;
+        position:fixed;
+        left:50%;
+        transform:translateX(-50%);
+        border-radius:0.5rem;
+        box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.212);
+    }
+
+    .mobile_links ul li {
+        margin-block:1.5rem;
+        text-align:center;
+    }
+
+    .mobile_links hr {
+        margin:auto;
+        width:80%;
+        border:1px solid hsl(240, 18%, 90%);
+    }
+
+    .hamburger button {
+        cursor:pointer;
+        background:none;
+        border:none;
+    }
+
+    .close.visible {
+        display:inline;
+    }
+
+    section {
+        flex-direction:column-reverse;
+    }
+
+    main {
+        margin-left:3rem;
+    }
+
+    .devices {
+        left:0;
+        margin-bottom:6rem;
+    }
+
+    .devices img {
+        width:40rem;
+    }
+
+    .bg {
+        top:-5rem;
+        left:15rem;
+    }
+}
