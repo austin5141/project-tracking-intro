@@ -5,11 +5,11 @@ const mobile_links = document.querySelector('.mobile_links')
 function openMenu() {
     hamburger.classList.add('hidden')
     x_button.classList.remove('hidden')
-    mobile_links.classList.remove('hidden')
+    mobile_links.classList.add('visible')
 }
 
 function closeMenu() {
     x_button.classList.add('hidden')
     hamburger.classList.remove('hidden')
-    mobile_links.classList.add('hidden')
+    mobile_links.classList.remove('visible')
 }
